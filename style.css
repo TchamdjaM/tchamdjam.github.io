@@ -139,6 +139,14 @@ footer a {
     transition: transform 0.3s ease-in-out;
 }
 
+.project-card .description-overlay {
+    display: none;
+}
+
+.project-card:hover .description-overlay {
+    display: block;
+}
+
 .project-card:hover {
     transform: scale(1.05);
 }
