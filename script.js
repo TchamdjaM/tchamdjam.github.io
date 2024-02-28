@@ -8,5 +8,5 @@ function submitForm() {
     const emailBody = `Nom: ${name}\nEmail: ${email}\nMessage: ${message}`;
 
     // Open the user's email client with a new email
-    window.location.href = `mailto:tchamdjamel@gmail.com?subject=Message%20from%20Portfolio&body=${encodeURIComponent(emailBody)}`;
+    window.location.href = `mailto:tchamdjamelissa@gmail.com?subject=Message%20from%20Portfolio&body=${encodeURIComponent(emailBody)}`;
 }
