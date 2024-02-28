@@ -11,7 +11,6 @@ body {
     color: #333;
     line-height: 1.6;
     padding-top: 120px; /* Espace pour le header fixe */
-    
 }
 
 header {
@@ -22,7 +21,7 @@ header {
     width: 100%;
     padding: 20px 0;
     text-align: center;
-    z-index: 500;
+    z-index: 1000;
 }
 
 
