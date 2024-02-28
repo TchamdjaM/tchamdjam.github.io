@@ -71,6 +71,16 @@ header nav ul li a:focus, footer a:focus {
     margin-bottom: 20px;
 }
 
+/* Ajout d'un décalage pour chaque section pour compenser la hauteur du header fixe */
+.section::before {
+    content: "";
+    display: block;
+    height: 120px; /* Hauteur de votre en-tête fixe */
+    margin-top: -120px; /* Négatif de la hauteur de votre en-tête fixe */
+    visibility: hidden;
+}
+
+
 .projects-container, .skills-container {
     display: flex;
     flex-wrap: wrap;
