@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             navProjects: "Projets",
             navSkills: "Compétences",
             navContact: "Contact",
-            languageToggle: "FR - EN", // Changement du libellé du bouton
+            languageToggle: "FR -> EN", // Changement du libellé du bouton
             welcomeTitle: "Bienvenue sur mon Portfolio",
             welcomeText: "Découvrez mes projets, compétences et expériences.",
             aboutTitle: "À propos de moi",
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
             navProjects: "Projects",
             navSkills: "Skills",
             navContact: "Contact",
-            languageToggle: "EN - FR", // Changement du libellé du bouton
+            languageToggle: "EN -> FR", // Changement du libellé du bouton
             welcomeTitle: "Welcome to my Portfolio",
             welcomeText: "Discover my projects, skills, and experiences.",
             aboutTitle: "About Me",
