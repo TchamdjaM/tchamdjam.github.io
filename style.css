@@ -37,7 +37,7 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
 }
-
+/*
 button {
     background-color: #4CAF50;
     color: #fff;
@@ -45,9 +45,9 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-}
+} */
 
-/* Styles pour le bouton FR-ENG */
+/* Styles pour le bouton FR-ENG 
 #languageToggle {
     background-color: #007bff; /* Couleur bleu ciel */
     border: none;
