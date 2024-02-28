@@ -140,3 +140,25 @@ footer a {
         width: 90%;
     }
 }
+
+/* Styles pour la section contact */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Pour occuper toute la hauteur de la page */
+}
+
+#contact-form {
+    width: 80%; /* Largeur du formulaire */
+    max-width: 500px; /* Largeur maximale du formulaire */
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+    width: 100%;
+    margin-bottom: 20px; /* Espacement entre les éléments */
+}
+
