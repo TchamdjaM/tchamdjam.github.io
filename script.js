@@ -1,39 +1,43 @@
-document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', function () {
+    // Ensure the DOM is fully loaded before attaching the event listener
 
-    // Récupérer les valeurs des champs
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+    document.querySelector('.contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
 
-    // Construire l'objet FormData
-    const formData = new FormData();
-    formData.append('name', name);
-    formData.append('email', email);
-    formData.append('message', message);
+        // Retrieve form data
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
 
-    // URL de l'endpoint Formspree (remplacez par votre propre endpoint si vous utilisez un autre service)
-    const apiUrl = 'https://formspree.io/f/vpzokgey';
+        // Build FormData object
+        const formData = new FormData();
+        formData.append('name', name);
+        formData.append('email', email);
+        formData.append('message', message);
 
-    // Envoi des données à Formspree avec la méthode POST
-    fetch(apiUrl, {
-        method: 'POST',
-        body: formData,
-        headers: {
-            'Accept': 'application/json'
-        }
-    })
-    .then(response => response.json())
-    .then(data => {
-        // Afficher une confirmation à l'utilisateur (vous pouvez personnaliser ceci)
-        alert('Formulaire soumis avec succès !');
+        // Formspree endpoint URL
+        const apiUrl = 'https://formspree.io/f/vpzokgey';
 
-        // Réinitialiser le formulaire
-        document.getElementById('contact-form').reset();
-    })
-    .catch(error => {
-        console.error('Erreur lors de l\'envoi du formulaire :', error);
-        // Afficher un message d'erreur à l'utilisateur (vous pouvez personnaliser ceci)
-        alert('Une erreur s\'est produite lors de l\'envoi du formulaire.');
+        // Send data to Formspree using POST method
+        fetch(apiUrl, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Display a confirmation message to the user
+            alert('Formulaire soumis avec succès !');
+
+            // Reset the form
+            document.querySelector('.contact-form').reset();
+        })
+        .catch(error => {
+            console.error('Erreur lors de l\'envoi du formulaire :', error);
+            // Display an error message to the user
+            alert('Une erreur s\'est produite lors de l\'envoi du formulaire.');
+        });
     });
 });
