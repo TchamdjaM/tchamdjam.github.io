@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             navProjects: "Projets",
             navSkills: "Compétences",
             navContact: "Contact",
-            languageToggle: "Changer de langue",
+            languageToggle: "FR - EN", // Changement du libellé du bouton
             welcomeTitle: "Bienvenue sur mon Portfolio",
             welcomeText: "Découvrez mes projets, compétences et expériences.",
             aboutTitle: "À propos de moi",
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
             navProjects: "Projects",
             navSkills: "Skills",
             navContact: "Contact",
-            languageToggle: "Switch Language",
+            languageToggle: "FR - EN", // Changement du libellé du bouton
             welcomeTitle: "Welcome to my Portfolio",
             welcomeText: "Discover my projects, skills, and experiences.",
             aboutTitle: "About Me",
@@ -68,18 +68,23 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-        function submitForm() {
+    function submitForm() {
         // Retrieve form data
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
-    
+
         // Construct the email body
         const emailBody = `Nom: ${name}\nEmail: ${email}\nMessage: ${message}`;
-    
+
         // Open the user's email client with a new email
         window.location.href = `mailto:tchamdjamelissa@gmail.com?subject=Message%20from%20Portfolio&body=${encodeURIComponent(emailBody)}`;
     }
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        submitForm();
+    });
 
     translatePage(); // Traduit la page dans la langue initiale (français) au chargement.
 });
