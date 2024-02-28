@@ -1,4 +1,4 @@
-/* Réinitialisation de certains styles par défaut */
+/* Réinitialisation de base et styles globaux */
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +7,14 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5; /* Couleur de fond légère pour le contraste */
-    color: #333; /* Couleur de texte principale */
-    line-height: 1.6; /* Espacement des lignes pour améliorer la lisibilité */
-    padding-top: 60px; /* Espace pour le header fixe */
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 80px; /* Espace pour le header fixe */
 }
 
 header {
-    background-color: #333; /* Noir */
+    background-color: #333;
     color: #fff;
     position: fixed;
     top: 0;
@@ -39,7 +39,7 @@ header nav ul li a {
 }
 
 button {
-    background-color: #4CAF50; /* Vert */
+    background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -47,12 +47,14 @@ button {
     border-radius: 5px;
 }
 
+/* Styles pour les sections */
 .section {
     padding: 20px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
-/* Styles pour la section des projets */
+/* Styles pour les cartes de projet */
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -61,47 +63,38 @@ button {
 }
 
 .project-card {
-    width: 300px;
-    overflow: hidden;
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: #fff; /* Arrière-plan blanc pour les cartes */
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 300px;
 }
 
 .project-card img {
     width: 100%;
-    height: auto;
-    transition: transform 0.5s ease;
-}
-
-.project-card:hover img {
-    transform: scale(1.1);
+    height: 200px;
+    object-fit: cover;
 }
 
 .project-info {
     padding: 15px;
 }
 
-.project-info h3, .project-info p, .project-info a {
-    margin-bottom: 10px;
+.project-info h3, .project-info p {
+    margin: 10px 0;
 }
 
 .project-info a {
-    display: inline-block;
     color: #007bff;
     text-decoration: none;
+    margin-right: 5px;
 }
 
 .project-info a:hover {
     text-decoration: underline;
 }
 
-/* Styles pour la section des compétences */
+/* Styles pour les compétences */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -110,26 +103,30 @@ button {
 }
 
 .skill {
-    width: 140px;
-    text-align: center;
-    padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    padding: 20px;
+    width: 140px;
+    text-align: center;
 }
 
 .skill img {
     width: 80px;
-    height: auto;
     margin-bottom: 10px;
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
 }
 
 /* Responsive Design */
@@ -137,5 +134,9 @@ footer {
     .projects-container, .skills-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .project-card, .skill {
+        width: 90%;
     }
 }
