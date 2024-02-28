@@ -38,15 +38,6 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
 }
-/*
-button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-} */
 
 /* Styles pour le bouton FR-ENG */
 #languageToggle {
@@ -66,6 +57,20 @@ button {
     padding: 20px;
     text-align: center;
     margin-bottom: 40px;
+}
+
+/* Ajout d'espace sous chaque titre h2 dans les sections */
+.section h2 {
+    margin-bottom: 20px; /* Ajustez cette valeur selon vos besoins */
+}
+
+/* Ajout d'un décalage pour chaque section pour compenser la hauteur du header fixe */
+.section::before {
+    content: "";
+    display: block;
+    height: 120px; /* Hauteur de votre en-tête fixe */
+    margin-top: -120px; /* Négatif de la hauteur de votre en-tête fixe */
+    visibility: hidden;
 }
 
 /* Styles pour les cartes de projet */
