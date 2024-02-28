@@ -61,6 +61,7 @@ header nav ul li a {
 
 .section p {
     margin-bottom: 20px; /* Ajustez cette valeur selon vos besoins */
+    margin-top: 50px; /* Ajustez cette valeur selon vos besoins */
 }
 
 /* Ajout d'un décalage pour chaque section pour compenser la hauteur du header fixe */
