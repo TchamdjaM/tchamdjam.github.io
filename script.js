@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
             emailPlaceholder: "Votre email",
             messagePlaceholder: "Votre message",
             submitButton: "Envoyer",
-            droit: "Tous droits réservés",
+            droit: "&copy; 2024 Tchamdja Mélissa. Tous droits réservés",
             footerConnect: "Retrouvez-moi sur :"
         },
         en: {
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
             emailPlaceholder: "Your Email",
             messagePlaceholder: "Your Message",
             submitButton: "Send",
-            droit: "All rights reserved",
+            droit: "&copy; 2024 Tchamdja Mélissa. All rights reserved",
             footerConnect: "Connect with me on:"
         }
     };
