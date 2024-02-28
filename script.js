@@ -1,12 +1,12 @@
-function submitForm() {
-    // Retrieve form data
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+// script.js
+function toggleLanguage() {
+    // Simple language toggle for demonstration purposes
+    const languageToggle = document.getElementById('languageToggle');
+    const currentLanguage = languageToggle.textContent;
 
-    // Construct the email body
-    const emailBody = `Nom: ${name}\nEmail: ${email}\nMessage: ${message}`;
-
-    // Open the user's email client with a new email
-    window.location.href = `mailto:tchamdjamelissa@gmail.com?subject=Message%20from%20Portfolio&body=${encodeURIComponent(emailBody)}`;
+    if (currentLanguage === 'Switch Language') {
+        languageToggle.textContent = 'Changer de Langue';
+    } else {
+        languageToggle.textContent = 'Switch Language';
+    }
 }

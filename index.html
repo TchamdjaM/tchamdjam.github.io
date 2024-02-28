@@ -13,11 +13,23 @@
 
     <header>
         <h1>Tchamdja Mélissa</h1>
-        <p>Étudiante en Bachelor 3 - Data Analyst/Business Analyst</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#about">À Propos de Moi</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="languageToggle" onclick="toggleLanguage()">Switch Language</button>
     </header>
 
-    <section class="portfolio-section" id="announcement-bar">
-        <p>Bienvenue sur mon portfolio ! Découvrez mes projets et compétences en Data Analyst.</p>
+    <section class="portfolio-section" id="home">
+        <div class="container">
+            <h2 class="section-title">Bienvenue sur mon Portfolio</h2>
+            <p>Découvrez mes projets, compétences et expériences en tant que Data Analyst/Business Analyst.</p>
+        </div>
     </section>
 
     <section class="portfolio-section" id="about">
@@ -27,78 +39,82 @@
         </div>
     </section>
 
+    
     <section class="portfolio-section" id="projects">
-        <div class="container">
-            <h2 class="section-title">Projets</h2>
-            <div class="project-pairs-container">
-                <div class="project-pair">
-                    <div class="project-card" style="background-image: url('image/film.genre.jpg');">
-                        <div class="card-overlay">
-                            <h3>Analyse données</h3>
-                            <p class="description-overlay">Développement d'une analyse des tendances des genres de films en utilisant Python.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-card" style="background-image: url('image/image.jpeg');">
-                        <div class="card-overlay">
-                            <h3>POWER BI</h3>
-                            <p class="description-overlay">Création d'un Rapport pour visualiser les tendances des films en genre. Intégration de données en temps réel.</p>
-                        </div>
+    <div class="container">
+        <h2 class="section-title">Projets</h2>
+        <div class="project-pairs-container">
+            <div class="project-pair">
+                <div class="project-card" style="background-image: url('image/film.genre.jpg');">
+                    <div class="card-overlay">
+                        <h3>Analyse de données sur les genres de films</h3>
+                        <p class="description-overlay">Développement d'une analyse des tendances des genres de films en utilisant Python.</p>
                     </div>
                 </div>
 
-                <div class="project-pair">
-                    <div class="project-card" style="background-image: url('image/projet3.png');">
-                        <div class="card-overlay">
-                            <h3>Wordcloud</h3>
-                            <p class="description-overlay">Création d'un wordcloud pour visualiser les mots du livre Orgueil et Préjugés. <a href="https://github.com/TchamdjaM/Wordcloud-R">Lien</a></p>
-                        </div>
+                <div class="project-card" style="background-image: url('image/image.jpeg');">
+                    <div class="card-overlay">
+                        <h3>POWER BI</h3>
+                        <p class="description-overlay">Création d'un rapport pour visualiser les tendances des films par genre. Intégration de données en temps réel.</p>
                     </div>
+                </div>
+            </div>
 
-                    <div class="project-card" style="background-image: url('image/image.jpeg');">
-                        <div class="card-overlay">
-                            <h3>Macros</h3>
-                            <p class="description-overlay">Travail sur les macros pour calculer les surfaces des polygones.</p>
-                        </div>
+            <div class="project-pair">
+                <div class="project-card" style="background-image: url('image/wordcloud.png');">
+                    <div class="card-overlay">
+                        <h3>Wordcloud</h3>
+                        <p class="description-overlay">Création d'un wordcloud pour visualiser les mots du livre "Orgueil et Préjugés". <a href="https://github.com/TchamdjaM/Wordcloud-R" target="_blank">Lien GitHub</a></p>
+                    </div>
+                </div>
+
+                <div class="project-card" style="background-image: url('image/image.jpg');">
+                    <div class="card-overlay">
+                        <h3>Macros pour calcul de surfaces</h3>
+                        <p class="description-overlay">Travail sur les macros pour calculer les surfaces des polygones.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="portfolio-section" id="experience">
-        <div class="container">
-            <h2 class="section-title">Expérience Académique</h2>
-
-            <div class="experience-item">
-                <h3>Bachelor 3 en Data Analyst/Business Analyst (2023)</h3>
-                <p>Modules avancés en analyse de données, statistiques appliquées et modélisation. Réalisation de projets pratiques en collaboration avec des entreprises locales.</p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Licence Informatique (2021 - 2023)</h3>
-                <p>Spécialisation en développement web et conception de bases de données.</p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Baccalauréat en Mathématiques et Physiques (2019 - 2020)</h3>
-                <p>Formation approfondie en mathématiques et physique, avec un accent particulier sur les compétences analytiques et la résolution de problèmes.</p>
-            </div>
-        </div>
+    </div>
     </section>
 
     <section class="portfolio-section" id="skills">
         <div class="container">
             <h2 class="section-title">Compétences</h2>
-            <ul>
-                <li><strong>Langages de Programmation:</strong> Python, R</li>
-                <li><strong>Bases de Données:</strong> SQL</li>
-                <li><strong>Data Visualization:</strong> Power BI</li>
-                <li><strong>Outils d'Analyse:</strong> Excel Macros, Statistiques et Modélisation</li>
-                <li><strong>Développement Web:</strong> HTML5, CSS3, JavaScript, PHP</li>
-                <li><strong>Version Control:</strong> Git</li>
-                <li><strong>Responsive Web Design</strong></li>
-            </ul>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="logo/python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <img src="logo/r.png" alt="R">
+                    <p>R</p>
+                </div>
+                <div class="skill">
+                    <img src="logo/python.png" alt="Python">
+                    <p>Power BI</p>
+                </div><div class="skill">
+                    <img src="logo/python.png" alt="Python">
+                    <p>SQL</p>
+                </div>
+                <div class="skill">
+                    <img src="logo/python.png" alt="Python">
+                    <p>Excel</p>
+                </div>
+                <div class="skill">
+                    <img src="logo/python.png" alt="Python">
+                    <p>HTML5 & CSS3</p>
+                </div>
+                <div class="skill">
+                    <img src="logo/python.png" alt="Python">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="logo/python.png" alt="Python">
+                    <p>PHP</p>
+                </div>
+            </div>
         </div>
     </section>
 
