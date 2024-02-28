@@ -18,15 +18,24 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     background: linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
-    width: 90%;
-    max-width: 1200px; /* Ajout d'une largeur maximale */
+    width: 85%; /* Ajuster la largeur */
+    max-width: 1200px; 
+}
+
+.portfolio-section {
+    margin: 20px 0; /* Ajuster la marge */
+}
+
+.project-pair {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project-card {
     position: relative;
     flex: 1;
-    width: 100%; /* Utiliser la largeur complète pour une seule colonne sur les petits écrans */
-    max-width: 400px; /* Ajout d'une largeur maximale pour éviter d'étirer excessivement les images */
+    width: 100%;
+    max-width: 400px;
     height: 420px;
     background-size: cover;
     background-position: center;
@@ -34,15 +43,38 @@ body {
     margin: 10px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    height: 100%; /* Utilise la hauteur complète de la paire de projets */
 }
 
-/* Ajout d'une règle pour rendre les sections plus étroites sur les petits écrans */
-@media only screen and (max-width: 600px) {
-    .container {
-        width: 95%;
-    }
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
 
-    .project-card {
-        max-width: 100%; /* Utiliser la largeur complète sur les petits écrans */
-    }
+#contact-form label {
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+#contact-form button {
+    padding: 8px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
 }
