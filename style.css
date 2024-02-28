@@ -30,8 +30,6 @@ li {
     margin-bottom: 10px;
 }
 
-/* Add other styles following a similar structure */
-
 .project-pairs-container {
     display: flex;
     flex-direction: column;
@@ -55,8 +53,5 @@ li {
     background-position: center;
     border-radius: 10px;
     margin: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    cursor: pointer
 }
-
-/* Add other project card styles following a similar structure */
