@@ -68,11 +68,18 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert("Message envoyé !");
-        // Ici, vous implémenteriez la logique d'envoi du formulaire, par exemple via AJAX.
-    });
+        function submitForm() {
+        // Retrieve form data
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+    
+        // Construct the email body
+        const emailBody = `Nom: ${name}\nEmail: ${email}\nMessage: ${message}`;
+    
+        // Open the user's email client with a new email
+        window.location.href = `mailto:tchamdjamelissa@gmail.com?subject=Message%20from%20Portfolio&body=${encodeURIComponent(emailBody)}`;
+    }
 
     translatePage(); // Traduit la page dans la langue initiale (français) au chargement.
 });
