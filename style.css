@@ -171,7 +171,6 @@ footer a {
 #contact-form {
     width: 80%; /* Largeur du formulaire */
     max-width: 500px; /* Largeur maximale du formulaire */
-    padding: 50px;
 }
 
 #contact-form input,
