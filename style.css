@@ -56,13 +56,12 @@ header nav ul li a {
 .section {
 
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
-/* Ajout d'espace sous chaque titre h2 dans les sections */
+
 .section p {
     margin-bottom: 20px; /* Ajustez cette valeur selon vos besoins */
 }
-
 
 /* Ajout d'un décalage pour chaque section pour compenser la hauteur du header fixe */
 .section::before {
