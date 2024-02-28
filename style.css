@@ -58,10 +58,15 @@ header nav ul li a {
     text-align: center;
     margin: 40px;
 }
-
+.section.projects-container{
+    margin-top: 50px;
+}
+.section.skills-container{
+    margin-top: 50px;
+}
 .section p {
     margin-bottom: 20px; /* Ajustez cette valeur selon vos besoins */
-    margin-top: 50px; /* Ajustez cette valeur selon vos besoins */
+    margin-top: 40px; /* Ajustez cette valeur selon vos besoins */
 }
 
 /* Ajout d'un décalage pour chaque section pour compenser la hauteur du header fixe */
