@@ -58,12 +58,12 @@ header nav ul li a {
     text-align: center;
     margin: 40px;
 }
-.section.projects-container{
-    margin-top: 50px;
+
+/* Ajout d'une marge au haut du conteneur des compétences */
+.skills-container {
+    margin-top: 40px; /* Ajustez cette valeur selon l'espace désiré */
 }
-.section.skills-container{
-    margin-top: 50px;
-}
+
 .section p {
     margin-bottom: 20px; /* Ajustez cette valeur selon vos besoins */
     margin-top: 40px; /* Ajustez cette valeur selon vos besoins */
