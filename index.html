@@ -1,151 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tchamdja Mélissa - Portfolio</title>
-    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <header>
         <h1>Tchamdja Mélissa</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home">Accueil</a></li>
                 <li><a href="#projects">Projets</a></li>
                 <li><a href="#skills">Compétences</a></li>
-                <li><a href="#about">À Propos de Moi</a></li>
+                <li><a href="#about">À propos de moi</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <button id="languageToggle" onclick="toggleLanguage()">Switch Language</button>
+        <button id="languageToggle">Changer de langue</button>
     </header>
 
-    <section class="portfolio-section" id="home">
-        <div class="container">
-            <h2 class="section-title">Bienvenue sur mon Portfolio</h2>
-            <p>Découvrez mes projets, compétences et expériences en tant que Data Analyst/Business Analyst.</p>
-        </div>
+    <section id="home" class="section">
+        <h2>Bienvenue sur mon Portfolio</h2>
+        <p>Découvrez mes projets, compétences et expériences.</p>
     </section>
 
-    <section class="portfolio-section" id="about">
-        <div class="container">
-            <h2 class="section-title">À Propos de Moi</h2>
-            <p>Je suis actuellement étudiante en Bachelor 3 avec une spécialisation en Data Analyst/Business Analyst. Passionnée par l'analyse de données, je cherche à mettre en avant mes compétences dans ce domaine et partager mes projets et expériences.</p>
-        </div>
-    </section>
-
-    
-    <section class="portfolio-section" id="projects">
-    <div class="container">
-        <h2 class="section-title">Projets</h2>
-        <div class="project-pairs-container">
-            <div class="project-pair">
-                <div class="project-card" style="background-image: url('image/film.genre.jpg');">
-                    <div class="card-overlay">
-                        <h3>Analyse de données sur les genres de films</h3>
-                        <p class="description-overlay">Développement d'une analyse des tendances des genres de films en utilisant Python.</p>
-                    </div>
-                </div>
-
-                <div class="project-card" style="background-image: url('image/image.jpeg');">
-                    <div class="card-overlay">
-                        <h3>POWER BI</h3>
-                        <p class="description-overlay">Création d'un rapport pour visualiser les tendances des films par genre. Intégration de données en temps réel.</p>
-                    </div>
-                </div>
+    <section id="projects" class="section">
+        <h2>Projets</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Analyse de données sur les genres de films</h3>
+                <p>Développement d'une analyse des tendances des genres de films en utilisant Python.</p>
             </div>
-
-            <div class="project-pair">
-                <div class="project-card" style="background-image: url('image/wordcloud.png');">
-                    <div class="card-overlay">
-                        <h3>Wordcloud</h3>
-                        <p class="description-overlay">Création d'un wordcloud pour visualiser les mots du livre "Orgueil et Préjugés". <a href="https://github.com/TchamdjaM/Wordcloud-R" target="_blank">Lien GitHub</a></p>
-                    </div>
-                </div>
-
-                <div class="project-card" style="background-image: url('image/image.jpg');">
-                    <div class="card-overlay">
-                        <h3>Macros pour calcul de surfaces</h3>
-                        <p class="description-overlay">Travail sur les macros pour calculer les surfaces des polygones.</p>
-                    </div>
-                </div>
+            <div class="project">
+                <h3>POWER BI</h3>
+                <p>Création d'un rapport pour visualiser les tendances des films par genre. Intégration de données en temps réel.</p>
             </div>
-        </div>
-    </div>
-    </section>
-
-    <section class="portfolio-section" id="skills">
-        <div class="container">
-            <h2 class="section-title">Compétences</h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <img src="logo/python.png" alt="Python">
-                    <p>Python</p>
-                </div>
-                <div class="skill">
-                    <img src="logo/r.png" alt="R">
-                    <p>R</p>
-                </div>
-                <div class="skill">
-                    <img src="logo/python.png" alt="Python">
-                    <p>Power BI</p>
-                </div><div class="skill">
-                    <img src="logo/python.png" alt="Python">
-                    <p>SQL</p>
-                </div>
-                <div class="skill">
-                    <img src="logo/python.png" alt="Python">
-                    <p>Excel</p>
-                </div>
-                <div class="skill">
-                    <img src="logo/python.png" alt="Python">
-                    <p>HTML5 & CSS3</p>
-                </div>
-                <div class="skill">
-                    <img src="logo/python.png" alt="Python">
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill">
-                    <img src="logo/python.png" alt="Python">
-                    <p>PHP</p>
-                </div>
+            <div class="project">
+                <h3>Wordcloud</h3>
+                <p>Création d'un wordcloud pour visualiser les mots du livre "Orgueil et Préjugés".</p>
+            </div>
+            <div class="project">
+                <h3>Macros pour calcul de surfaces</h3>
+                <p>Travail sur les macros pour calculer les surfaces des polygones.</p>
             </div>
         </div>
     </section>
 
-    <section class="portfolio-section" id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <form class="contact-form">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="button" onclick="submitForm()">Envoyer</button>
-            </form>
+    <section id="skills" class="section">
+        <h2>Compétences</h2>
+        <div class="skills-container">
+            <div class="skill">Python</div>
+            <div class="skill">R</div>
+            <div class="skill">Power BI</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Excel</div>
+            <div class="skill">HTML5 & CSS3</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">PHP</div>
         </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>À propos de moi</h2>
+        <p>Je suis actuellement étudiante en Bachelor 3 avec une spécialisation en Data Analyst/Business Analyst. Passionnée par l'analyse de données, je cherche à mettre en avant mes compétences dans ce domaine et partager mes projets et expériences.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2023 Tchamdja Mélissa. Tous droits réservés.</p>
-            <p>Retrouvez-moi sur :</p>
-            <a href="https://www.linkedin.com/in/melissatchamdja/" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/tchamdjam" target="_blank">GitHub</a>
-        </div>
+        <p>&copy; 2023 Tchamdja Mélissa. Tous droits réservés.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>

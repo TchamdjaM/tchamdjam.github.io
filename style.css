@@ -2,10 +2,6 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #b3e0ff; /* Bleu */
     color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -17,13 +13,10 @@ header {
     text-align: center;
 }
 
-nav {
-    margin-top: 10px;
-}
-
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -32,68 +25,47 @@ nav ul li {
 }
 
 nav a {
-    text-decoration: none;
     color: #fff;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #b3e0ff; /* Bleu */
+    text-decoration: none;
 }
 
 button {
-    margin-top: 10px;
     background-color: #4caf50; /* Vert */
     color: #fff;
-    padding: 10px;
     border: none;
+    padding: 10px 20px;
     cursor: pointer;
 }
 
-.container {
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 8px;
+.section {
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    background: linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
-    width: 85%;
-    max-width: 1200px;
-}
-
-.portfolio-section {
-    margin: 20px 0;
-}
-
-.section-title {
-    color: #333;
-}
-
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.skill {
-    margin: 10px;
     text-align: center;
 }
 
-.skill img {
-    max-width: 50px;
-    max-height: 50px;
+.projects-container, .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project, .skill {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(50% - 20px);
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
+    background-color: #333;
     color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
 
-footer a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
+@media (max-width: 600px) {
+    .project, .skill {
+        width: 100%;
+    }
 }
