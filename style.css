@@ -80,7 +80,7 @@ button {
 .project-card {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(27, 172, 168, 0.2);
     overflow: hidden;
     width: 300px;
 }
@@ -168,6 +168,7 @@ footer a {
 #contact-form {
     width: 80%; /* Largeur du formulaire */
     max-width: 500px; /* Largeur maximale du formulaire */
+    padding: 15px;
 }
 
 #contact-form input,
