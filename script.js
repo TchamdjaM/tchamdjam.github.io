@@ -55,8 +55,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentLang = 'fr';
 
     document.getElementById('languageToggle').addEventListener('click', function() {
-        this.classList.toggle('fr'); // Ajoute ou supprime la classe "fr"
-      });
+        currentLang = currentLang === 'fr' ? 'en' : 'fr';
+        translatePage();
+    });
 
     function translatePage() {
         document.querySelectorAll("[data-key]").forEach(el => {

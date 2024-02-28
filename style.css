@@ -61,51 +61,7 @@ button {
     margin-right: 15px; /* Espacement avec les autres éléments */
 }
 
-/* Styles pour le bouton de bascule */
-.toggle-button {
-    position: relative;
-    background-color: #007bff; /* Couleur de fond par défaut */
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    overflow: hidden;
-    width: 80px;
-    height: 40px;
-  }
-  
-  /* Styles pour le texte "FR" et "EN" */
-  .toggle-text {
-    display: inline-block;
-    width: 40px;
-    text-align: center;
-    font-size: 16px;
-    line-height: 1;
-  }
-  
-  /* Styles pour l'interrupteur */
-  .toggle-switch {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 100%;
-    background-color: #f8f9fa; /* Couleur de l'interrupteur par défaut */
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-  }
-  
-  /* Styles pour l'interrupteur lorsque FR est sélectionné */
-  #languageToggle.fr .toggle-switch {
-    transform: translateX(0);
-  }
-  
-  /* Styles pour l'interrupteur lorsque EN est sélectionné */
-  #languageToggle.en .toggle-switch {
-    transform: translateX(100%);
-  }
-  
+
 /* Styles pour les sections */
 .section {
     padding: 20px;
