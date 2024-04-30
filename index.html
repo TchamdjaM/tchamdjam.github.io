@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tchamdja Mélissa || Data analyst">
+	<link rel= "shortcut icon" href="image/logo.webp">
+    <title data-key="title">Tchamdja Mélissa - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Tchamdja Mélissa</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" data-key="navHome">Accueil</a></li>
+                <li><a href="#about" data-key="navAbout">À propos de moi</a></li>
+                <li><a href="#projects" data-key="navProjects">Projets</a></li>
+                <li><a href="#skills" data-key="navSkills">Compétences</a></li>
+                <li><a href="#contact" data-key="navContact">Contact</a></li>
+                <button id="languageToggle" data-key="languageToggle" onclick="toggleLanguage()">FR</button>
+            </ul>
+    </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h2 data-key="welcomeTitle">Bienvenue sur mon Portfolio</h2>
+        <p data-key="welcomeText">Découvrez mes projets, compétences et expériences.</p>
+    </section>
+
+    <section id="about" class="section">
+        <h2 data-key="aboutTitle">À Propos de Moi</h2>
+        <p data-key="aboutText">Je suis Tchamdja Mélissa, une étudiante en Data Analyst / Business Analyst  avec une forte 
+    inclinaison pour la visualisation de données impactantes. À travers ce portfolio, 
+    je souhaite partager avec vous les projets sur lesquels j'ai travaillé, qui illustrent 
+    mon approche méthodique et ma capacité à transformer les données brutes en informations 
+    actionnables.</p>
+    </section>
+
+
+    <section id="projects" class="section">
+        <h2 data-key="projectsTitle">Projets</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="image/film.genre.jpg" alt="Analyse de données">
+                <div class="project-info">
+                    <h3 data-key="project1Title">Analyse de données sur les genres de films</h3>
+                    <p data-key="project1Desc">Ce projet illustre comment les données peuvent être utilisées pour découvrir des tendances dans l'industrie cinématographique.</p>
+                    <p data-key="tech1"><strong>Technologies utilisées:</strong> Python, Matplotlib, Pandas</p>
+                    <a data-key="voir" href="https://github.com/TchamdjaM/film-genre-statistics" target="_blank">Voir le projet</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="image/power.jpg" alt="Dashboard Power BI">
+                <div class="project-info">
+                    <h3 data-key="project2Title">Dashboard Power BI pour l'analyse des films</h3>
+                    <p data-key="project2Desc">Création d'un tableau de bord pour suivre les performances des films en fonction des genres.</p>
+                    <p data-key="tech2"><strong>Technologies utilisées:</strong> Power BI, Excel</p>
+                    <a data-key="voir" href="https://github.com/TchamdjaM/film-genre.powerbi" target="_blank">Voir le projet</a>                 
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="image/wordcloud.png" alt="wordcloud">
+                <div class="project-info">
+                    <h3 data-key="project3Title">WORDCLOUD</h3>
+                    <p data-key="project3Desc">Création d'un wordcloud pour visualiser les mots du livre "Orgueil et Préjugés" de jane Austen en R.</p>
+                    <p data-key="tech3"><strong>Technologies utilisées:</strong> R, Stats, ggplot</p>
+                    <a data-key="voir" href="https://github.com/TchamdjaM/Wordcloud-R" target="_blank">Voir le projet</a> 
+                </div>
+            </div>           
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 data-key="skillsTitle">Compétences</h2>
+        <div class="skills-container">
+            <!-- Exemple de compétence avec image -->
+            <div class="skill">
+               <img src="image/python.png" alt="Python">
+               <p>Python</p>
+            </div>
+            <div class="skill">
+                <img src="image/r.png" alt="R">
+                <p>R</p>
+            </div>
+            <div class="skill">
+                <img src="image/powerbi.png" alt="Power bi">
+                <p>POWER BI</p>
+            </div>
+            <div class="skill">
+                <img src="image/sql.png" alt="sql">
+                <p>SQL</p>
+            </div>
+            <div class="skill">
+                <img src="image/excel.png" alt="excel">
+                <p>Excel</p>
+            </div>
+            <div class="skill">
+                <img src="image/html.png" alt="html">
+                <p>HTML5</p>
+            </div>
+            <div class="skill">
+                <img src="image/css.png" alt="css">
+                <p>CSS3</p>
+            </div>
+            <div class="skill">
+                <img src="image/js.png" alt="js">
+                <p>Javascript</p>
+            </div>
+            <div class="skill">
+                <img src="image/php.png" alt="php">
+                <p>PHP</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2 data-key="contactTitle">Contact</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Votre nom" required data-key="namePlaceholder">
+            <input type="email" id="email" name="email" placeholder="Votre email" required data-key="emailPlaceholder">
+            <textarea id="message" name="message" placeholder="Votre message" required data-key="messagePlaceholder"></textarea>
+            <button type="submit" data-key="submitButton">Envoyer</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p data-key="droit">&copy; 2024 Tchamdja Mélissa. Tous droits réservés.</p>
+        <p data-key="footerConnect">Retrouvez-moi sur</p>
+        <a href="https://www.linkedin.com/in/melissatchamdja/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/tchamdjam" target="_blank">github</a>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
